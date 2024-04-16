@@ -123,7 +123,7 @@ class Tetris():
             for j in range(4):
                 p = i*4 + j
                 if p in self.Figure.image():
-                    self.field[i + self.Figure.y][j + self.Figure.x] = self.Figure.type
+                    self.field[i + self.Figure.y][j + self.Figure.x] = self.Figure.type + 1
         self.break_lines()
         self.new_figure()
         if self.intersects():
